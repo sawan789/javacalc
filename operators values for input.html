@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+*{
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+}
+input[type=text], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+  
+}
+
+input.a[type=text] {
+
+    width:18%;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid black;
+    
+}
+
+button{
+    color: black;
+    font-weight: bolder;
+width: 3%;
+text-align: center;
+border: 1px solid black;
+}
+
+
+input.a[type=text] {
+
+
+text-align: center;
+border: 1px solid black;
+
+
+
+
+
+
+
+
+
+
+
+}
+select{
+
+    color: black;
+    width: 8%;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+    <h1 style="color: blue; font-size: 30px; text-align: center;">JAVASCRIPT CALCULATOR 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    :</h1>
+    
+
+<input type="text" id="inp1"/> <br><br>
+<input type="text" id="inp2"/> <br><br>
+
+<select id="oper">
+
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="x">x</option>
+<option value="/">/</option>
+
+
+
+
+
+
+
+
+</select> 
+
+
+
+
+
+
+
+<button onclick="calc();">=</button>
+
+
+
+
+
+
+<input type="text" id="result" class="a">
+
+
+<script>
+
+function calc() {
+    var a = parseFloat(document.getElementById('inp1').value);
+    var b = parseFloat(document.getElementById('inp2').value);
+var operator = document.getElementById('oper').value;
+
+if (operator === "+") 
+{document.getElementById('result').value = a+b ;
+    
+}
+
+if (operator === "-") 
+{document.getElementById('result').value = a-b ;
+    
+}
+
+if (operator === "x") 
+{document.getElementById('result').value = a*b ;
+    
+}
+
+if (operator === "/") 
+{document.getElementById('result').value = a/b;
+    
+}
+
+};
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+    
+</body>
+</html>
